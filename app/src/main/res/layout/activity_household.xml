@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.manhica.maltem.react.activity.Household">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffd6d7d7">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="15dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/label_household_head"
+            android:id="@+id/textView16"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/tv_household_head_name"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignStart="@+id/textView16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/label_household_number"
+            android:id="@+id/textView18"
+            android:layout_below="@+id/tv_household_head_name"
+            android:layout_alignStart="@+id/tv_household_head_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/tv_household_household_number"
+            android:layout_below="@+id/textView18"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tv_household_last_visit_date"
+            android:layout_below="@+id/tv_household_household_number"
+            android:layout_alignStart="@+id/tv_household_household_number" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_household_members"
+        android:layout_weight="1" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/household_bt_new_member"
+        android:background="@color/primaryColor"
+        android:textColor="#FFF"
+        android:text="@string/label_add" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Household"
+        android:id="@+id/button4"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

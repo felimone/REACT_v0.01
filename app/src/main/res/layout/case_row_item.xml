@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:padding="5dp"
+        android:id="@+id/iv_household_row_item_status"
+        android:src="@drawable/check" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tv_case_row_item_name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/iv_household_row_item_status" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="6099-999-99"
+        android:id="@+id/tv_case_row_item_permid"
+        android:layout_below="@+id/tv_case_row_item_name"
+        android:layout_toEndOf="@+id/iv_household_row_item_status" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tv_case_row_item_household_number"
+        android:text="6099-999"
+        android:layout_below="@+id/tv_case_row_item_name"
+        android:layout_toEndOf="@+id/tv_case_row_item_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tv_case_row_item_village"
+        android:layout_below="@+id/tv_case_row_item_permid"
+        android:layout_toEndOf="@+id/case_row_item_admin_post" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/case_row_item_admin_post"
+        android:layout_below="@+id/tv_case_row_item_permid"
+        android:layout_alignStart="@+id/tv_case_row_item_permid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tv_case_row_item_date"
+        android:layout_below="@+id/tv_case_row_item_village"
+        android:layout_alignStart="@+id/case_row_item_admin_post" />
+</RelativeLayout>
